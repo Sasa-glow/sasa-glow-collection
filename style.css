@@ -32,6 +32,15 @@ header {
     background: rgba(255,255,255,0.95);
     border-bottom: 1px solid #f0dddd;
 }
+.logo .sasa{
+    color:black;
+}
+.logo .glow {
+    color:red;
+}
+.logo .collection {
+    color:green;
+}
 
 .logo {
     font-size: 27px;
