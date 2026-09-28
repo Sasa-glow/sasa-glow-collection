@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -10,38 +9,33 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background: #fff9f7;
-    color: #333;
+    color: #30272a;
     line-height: 1.6;
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-
-    padding: 18px 7%;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    padding: 18px 7%;
+
+    background: rgba(255,255,255,0.95);
     border-bottom: 1px solid #f0dddd;
 }
 
 .logo {
     font-size: 27px;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
 .logo span {
@@ -58,8 +52,7 @@ nav a {
     color: #333;
     text-decoration: none;
     font-size: 15px;
-    font-weight: 500;
-
+    font-weight: bold;
     transition: 0.3s;
 }
 
@@ -68,12 +61,10 @@ nav a:hover {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
-    min-height: 520px;
+    min-height: 560px;
 
     display: flex;
     flex-direction: column;
@@ -85,11 +76,16 @@ nav a:hover {
     padding: 80px 20px;
 
     background:
-        radial-gradient(circle at top right, #fff 0%, transparent 35%),
-        linear-gradient(135deg, #fde8ee, #fff6f2);
+        radial-gradient(circle at top right,
+        white 0%,
+        transparent 35%),
+        linear-gradient(135deg,
+        #fde8ee,
+        #fff6f2);
 }
 
-.small-title {
+.tagline,
+.section-tag {
     color: #c85d7d;
     font-size: 13px;
     font-weight: bold;
@@ -97,23 +93,22 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(45px, 7vw, 75px);
+    font-size: clamp(48px, 8vw, 80px);
     margin: 15px 0;
-
-    color: #2f2527;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
 }
 
-.hero > p:not(.small-title) {
+.hero p:not(.tagline) {
     max-width: 600px;
-    font-size: 18px;
     color: #666;
+    font-size: 18px;
     margin-bottom: 30px;
 }
 
 .btn,
 button {
     border: none;
+
     background: #30272a;
     color: white;
 
@@ -134,31 +129,26 @@ button {
 button:hover {
     background: #d66b8a;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(214, 107, 138, 0.25);
+    box-shadow: 0 10px 25px rgba(214,107,138,0.25);
 }
 
 
-/* =========================
-   PRODUCTS SECTION
-========================= */
+/* PRODUCTS */
 
 #products {
     padding: 90px 6%;
+    text-align: center;
 }
 
 #products h2,
+.why h2,
 .about h2,
 .contact h2 {
-    text-align: center;
-
     font-size: 40px;
-    color: #30272a;
-
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.section-text {
-    text-align: center;
+.section-description {
     color: #777;
     margin-bottom: 45px;
 }
@@ -167,14 +157,13 @@ button:hover {
 /* PRODUCT GRID */
 
 .products {
-    display: grid;
+    max-width: 1400px;
+    margin: auto;
 
+    display: grid;
     grid-template-columns: repeat(5, 1fr);
 
     gap: 22px;
-
-    max-width: 1400px;
-    margin: auto;
 }
 
 
@@ -183,71 +172,39 @@ button:hover {
 .product {
     background: white;
 
-    border: 1px solid #f1dddd;
-
-    border-radius: 18px;
-
     padding: 15px;
 
-    box-shadow: 0 8px 30px rgba(70, 30, 40, 0.06);
+    border: 1px solid #f1dddd;
+    border-radius: 18px;
 
-    transition:
-        transform 0.3s,
-        box-shadow 0.3s;
+    text-align: left;
+
+    box-shadow: 0 8px 30px rgba(70,30,40,0.06);
+
+    transition: 0.3s;
 }
 
 .product:hover {
     transform: translateY(-8px);
 
     box-shadow:
-        0 18px 40px rgba(70, 30, 40, 0.12);
+        0 18px 40px rgba(70,30,40,0.12);
 }
 
 
 /* PRODUCT IMAGE */
 
-.product-image {
+.product img {
+    width: 100%;
     height: 210px;
+
+    object-fit: cover;
 
     border-radius: 14px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 15px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #f9dfe5,
-            #fceeea
-        );
-
-    color: #b98996;
-
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-
-    margin-bottom: 18px;
-
-    position: relative;
-    overflow: hidden;
-}
-
-.product-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 120px;
-    height: 120px;
-
-    border-radius: 50%;
-
-    background: rgba(255, 255, 255, 0.35);
-
-    top: -30px;
-    right: -20px;
+    background: #f9dfe5;
 }
 
 
@@ -255,34 +212,31 @@ button:hover {
 
 .product h3 {
     font-size: 18px;
-    color: #30272a;
-
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
-.product p {
-    font-size: 14px;
-    color: #777;
-
-    margin-top: 9px;
-}
-
-.product .quality {
+.product span {
     color: #d06483;
-
     font-size: 13px;
-
     font-weight: bold;
 }
 
+.product p {
+    color: #777;
+    font-size: 14px;
+    margin: 10px 0 15px;
+}
 
-/* =========================
-   ABOUT
-========================= */
+.product button {
+    width: 100%;
+    padding: 10px;
+}
 
-.about {
-    padding: 90px 20px;
 
+/* WHY */
+
+.why {
+    padding: 90px 7%;
     text-align: center;
 
     background: white;
@@ -291,57 +245,89 @@ button:hover {
     border-bottom: 1px solid #f3dddd;
 }
 
-.about p {
-    max-width: 650px;
+.features {
+    max-width: 1000px;
+    margin: 45px auto 0;
 
-    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+    gap: 25px;
+}
+
+.feature {
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    background: #fff9f7;
+
+    border: 1px solid #f1dddd;
+}
+
+.icon {
+    font-size: 35px;
+    color: #d66b8a;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+.feature p {
     color: #777;
-}
-
-.about strong {
-    color: #d06483;
-
-    font-size: 17px;
+    font-size: 14px;
 }
 
 
-/* =========================
-   CONTACT
-========================= */
+/* ABOUT */
 
-.contact {
-    text-align: center;
-
+.about {
     padding: 90px 20px;
 
-    background:
-        linear-gradient(
-            135deg,
-            #fde8ee,
-            #fff5f0
-        );
+    text-align: center;
+
+    background: #fff9f7;
 }
 
-.contact p {
-    color: #777;
+.about p:not(.section-tag) {
+    max-width: 650px;
 
+    margin: 18px auto;
+
+    color: #777;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg,
+        #fde8ee,
+        #fff5f0);
+}
+
+.contact p:not(.section-tag) {
+    color: #777;
     margin: 18px 0 25px;
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
-    background: #30272a;
-
-    color: white;
+    padding: 45px 20px;
 
     text-align: center;
 
-    padding: 45px 20px;
+    background: #30272a;
+    color: white;
 }
 
 footer h3 {
@@ -354,16 +340,12 @@ footer span {
 
 footer p {
     color: #d8c9cc;
-
-    margin-top: 10px;
-
+    margin-top: 8px;
     font-size: 14px;
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 1100px) {
 
@@ -374,9 +356,7 @@ footer p {
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 700px) {
 
@@ -398,40 +378,31 @@ footer p {
         justify-content: center;
     }
 
-    nav a {
-        font-size: 14px;
+    .products {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        min-height: 450px;
+    .features {
+        grid-template-columns: 1fr;
     }
 
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    #products {
+    #products,
+    .why,
+    .about,
+    .contact {
         padding: 65px 20px;
     }
 
     #products h2,
+    .why h2,
     .about h2,
     .contact h2 {
         font-size: 32px;
     }
-
-    .products {
-        grid-template-columns: repeat(2, 1fr);
-
-        gap: 15px;
-    }
-
 }
 
 
-/* =========================
-   SMALL PHONE
-========================= */
+/* SMALL MOBILE */
 
 @media (max-width: 480px) {
 
@@ -439,35 +410,12 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .product-image {
-        height: 230px;
-    }
-
     .hero h1 {
-        font-size: 42px;
+        font-size: 45px;
     }
 
-    .hero > p:not(.small-title) {
+    .hero p:not(.tagline) {
         font-size: 16px;
     }
 
 }
-```
-
-### Result
-
-This will give you a **soft pink/cream luxury look**, with:
-
-* ✨ Premium-looking header
-* 🌸 Attractive hero section
-* 🧴 Clean product cards
-* ⭐ Quality labels
-* 💗 Hover animations
-* 📱 Mobile responsive design
-* 🖥️ 5 products per row on large screens
-* 📱 2 per row on tablets/phones
-* 📱 1 per row on small phones
-* No prices or `$` signs
-* No complicated CSS
-
-
