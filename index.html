@@ -1,12 +1,10 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SASA Glow Collection</title>
+    <title>SASA Glow | Beauty & Care</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,7 +14,6 @@
 <!-- ================= HEADER ================= -->
 
 <header>
-
     <div class="logo">
         SASA <span>Glow</span>
     </div>
@@ -24,10 +21,10 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </nav>
-
 </header>
 
 
@@ -35,13 +32,13 @@
 
 <section id="home" class="hero">
 
-    <p class="small-title">WELCOME TO SASA GLOW</p>
+    <p class="tagline">WELCOME TO SASA GLOW</p>
 
     <h1>Glow Your Way.</h1>
 
     <p>
-        Quality beauty and personal-care products
-        designed for your everyday routine.
+        Simple beauty and everyday care made for
+        your daily glow.
     </p>
 
     <a href="#products" class="btn">
@@ -55,234 +52,288 @@
 
 <section id="products">
 
-    <h2>Our Products</h2>
+    <p class="section-tag">OUR COLLECTION</p>
 
-    <p class="section-text">
-        Simple, useful and quality products for everyday care.
+    <h2>Beauty Essentials</h2>
+
+    <p class="section-description">
+        Quality products for simple and beautiful everyday care.
     </p>
 
 
     <div class="products">
 
-
-        <!-- PRODUCT 01 -->
+        <!-- 1 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 01
-            </div>
+            <img src="images/cleanser.jpg"
+                 alt="Gentle Face Cleanser">
 
             <h3>Gentle Face Cleanser</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Gently removes dirt and excess oil
-                while leaving the skin feeling fresh
-                and clean.
+                Gently cleanses the skin and removes
+                everyday dirt and excess oil.
             </p>
+
+            <button onclick="orderProduct('Gentle Face Cleanser')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 02 -->
+        <!-- 2 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 02
-            </div>
+            <img src="images/moisturizer.jpg"
+                 alt="Glow Moisturizer">
 
             <h3>Glow Moisturizer</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Helps keep skin soft, hydrated
-                and comfortable throughout the day.
+                Helps keep your skin soft,
+                hydrated and comfortable.
             </p>
+
+            <button onclick="orderProduct('Glow Moisturizer')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 03 -->
+        <!-- 3 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 03
-            </div>
+            <img src="images/sunscreen.jpg"
+                 alt="Daily Sunscreen">
 
             <h3>Daily Sunscreen</h3>
 
-            <p class="quality">
-                ⭐ High Quality
-            </p>
+            <span>High Quality</span>
 
             <p>
-                Everyday sun-care product designed
-                to help protect skin from UV exposure.
+                Everyday sun-care for your
+                regular beauty routine.
             </p>
+
+            <button onclick="orderProduct('Daily Sunscreen')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 04 -->
+        <!-- 4 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 04
-            </div>
+            <img src="images/lip-balm.jpg"
+                 alt="Hydrating Lip Balm">
 
             <h3>Hydrating Lip Balm</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Helps keep lips moisturized,
+                Keeps lips moisturized,
                 smooth and comfortable.
             </p>
 
+            <button onclick="orderProduct('Hydrating Lip Balm')">
+                Order Now
+            </button>
+
         </div>
 
 
-        <!-- PRODUCT 05 -->
+        <!-- 5 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 05
-            </div>
+            <img src="images/body-lotion.jpg"
+                 alt="Soft Body Lotion">
 
             <h3>Soft Body Lotion</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Provides everyday moisture and
-                leaves skin feeling soft and smooth.
+                Daily moisture care for
+                soft and smooth skin.
             </p>
+
+            <button onclick="orderProduct('Soft Body Lotion')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 06 -->
+        <!-- 6 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 06
-            </div>
+            <img src="images/body-wash.jpg"
+                 alt="Silk Body Wash">
 
             <h3>Silk Body Wash</h3>
 
-            <p class="quality">
-                ⭐ High Quality
-            </p>
+            <span>High Quality</span>
 
             <p>
-                Refreshing daily body cleanser
-                for a clean and comfortable feel.
+                A refreshing cleanser for
+                everyday body care.
             </p>
+
+            <button onclick="orderProduct('Silk Body Wash')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 07 -->
+        <!-- 7 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 07
-            </div>
+            <img src="images/shampoo.jpg"
+                 alt="Everyday Shampoo">
 
             <h3>Everyday Shampoo</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Gentle hair cleansing for a fresh,
-                clean and comfortable feeling.
+                Gentle hair cleansing for
+                your everyday routine.
             </p>
+
+            <button onclick="orderProduct('Everyday Shampoo')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 08 -->
+        <!-- 8 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 08
-            </div>
+            <img src="images/conditioner.jpg"
+                 alt="Hair Conditioner">
 
             <h3>Hair Conditioner</h3>
 
-            <p class="quality">
-                ⭐ Premium Quality
-            </p>
+            <span>Premium Quality</span>
 
             <p>
-                Helps hair feel softer, smoother
-                and easier to manage.
+                Helps make hair softer,
+                smoother and manageable.
             </p>
+
+            <button onclick="orderProduct('Hair Conditioner')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 09 -->
+        <!-- 9 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 09
-            </div>
+            <img src="images/hand-cream.jpg"
+                 alt="Hand and Body Cream">
 
             <h3>Hand & Body Cream</h3>
 
-            <p class="quality">
-                ⭐ High Quality
-            </p>
+            <span>High Quality</span>
 
             <p>
-                Everyday moisturizing care for
-                hands and dry-feeling skin.
+                Everyday moisturizing care
+                for hands and body.
             </p>
+
+            <button onclick="orderProduct('Hand & Body Cream')">
+                Order Now
+            </button>
 
         </div>
 
 
-        <!-- PRODUCT 10 -->
+        <!-- 10 -->
 
         <div class="product">
 
-            <div class="product-image">
-                PRODUCT 10
-            </div>
+            <img src="images/glow-set.jpg"
+                 alt="Glow Care Set">
 
             <h3>Glow Care Set</h3>
 
-            <p class="quality">
-                ⭐ Premium Collection
-            </p>
+            <span>Premium Collection</span>
 
             <p>
-                A convenient combination of
-                everyday beauty and personal-care essentials.
+                A combination of everyday
+                beauty and personal-care essentials.
             </p>
 
+            <button onclick="orderProduct('Glow Care Set')">
+                Order Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY SASA GLOW ================= -->
+
+<section id="why" class="why">
+
+    <p class="section-tag">WHY SASA GLOW</p>
+
+    <h2>Made for Everyday Beauty</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="icon">✦</div>
+            <h3>Quality</h3>
+            <p>
+                Carefully selected beauty and
+                personal-care essentials.
+            </p>
+        </div>
+
+
+        <div class="feature">
+            <div class="icon">♡</div>
+            <h3>Everyday Care</h3>
+            <p>
+                Simple products designed
+                for everyday routines.
+            </p>
+        </div>
+
+
+        <div class="feature">
+            <div class="icon">✧</div>
+            <h3>Simple Beauty</h3>
+            <p>
+                Beauty that feels simple,
+                comfortable and effortless.
+            </p>
         </div>
 
     </div>
@@ -294,34 +345,40 @@
 
 <section id="about" class="about">
 
-    <h2>About SASA Glow</h2>
+    <p class="section-tag">ABOUT SASA GLOW</p>
+
+    <h2>Beauty Made Simple</h2>
 
     <p>
-        SASA Glow Collection focuses on simple,
-        practical and quality beauty products
-        for everyday self-care.
+        SASA Glow is created with a simple idea:
+        everyday beauty should feel easy, comfortable
+        and enjoyable.
     </p>
 
-    <strong>
-        Quality products. Simple care. Your glow.
-    </strong>
+    <p>
+        From skincare to haircare and body care,
+        our collection focuses on quality essentials
+        for your everyday routine.
+    </p>
 
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- ================= CONTACT / ORDER ================= -->
 
 <section id="contact" class="contact">
 
-    <h2>Contact SASA Glow</h2>
+    <p class="section-tag">CONTACT US</p>
+
+    <h2>Let's Talk Beauty</h2>
 
     <p>
-        Have a question about our products?
-        Get in touch with us.
+        Want to know more about our products?
+        Contact SASA Glow today.
     </p>
 
     <button onclick="contactUs()">
-        Contact Us
+        Contact SASA Glow
     </button>
 
 </section>
@@ -331,16 +388,14 @@
 
 <footer>
 
-    <h3>
-        SASA <span>Glow</span>
-    </h3>
+    <h3>SASA <span>Glow</span></h3>
 
     <p>
-        Quality beauty for your everyday glow.
+        Beauty • Care • Confidence
     </p>
 
     <p>
-        © 2026 SASA Glow Collection
+        © 2026 SASA Glow. All rights reserved.
     </p>
 
 </footer>
