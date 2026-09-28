@@ -1,1061 +1,588 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-
-    <!-- Responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Website information -->
-    <meta
-        name="description"
-        content="SASA Glow Collection — modern beauty essentials for your everyday glow."
-    >
+    <title>SASA Glow Collection</title>
 
-    <meta name="author" content="SASA Glow Collection">
-
-    <!-- Prevents the browser from loading content outside this website
-         unless we explicitly allow it later. -->
-    <meta
-        http-equiv="Content-Security-Policy"
-        content="default-src 'self';
-                 img-src 'self' data:;
-                 style-src 'self';
-                 script-src 'self';
-                 font-src 'self';
-                 connect-src 'self';
-                 base-uri 'self';
-                 form-action 'self';"
-    >
-
-    <meta name="theme-color" content="#fff8f5">
-
-    <title>SASA Glow Collection | Glow, Your Way</title>
-    
-
-    <!-- CSS will be added in Step 2 -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="images/my-photo.jpg" alt="Description of the photo" width="500">
 
-    <!-- =========================================
-         ACCESSIBILITY
-    ========================================== -->
+<!-- ================= HEADER ================= -->
 
-    <a href="#main-content" class="skip-link">
-        Skip to content
+<header>
+
+    <div class="logo">
+        SASA <span>Glow</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <p class="small-title">WELCOME TO SASA GLOW Collection</p>
+
+    <h1>Glow Your Way.</h1>
+
+    <p>
+        Quality beauty and personal-care products
+        designed for your everyday routine.
+    </p>
+
+    <a href="#products" class="btn">
+        Explore Products
     </a>
-    
 
+</section>
 
-    <!-- =========================================
-         HEADER / NAVIGATION
-    ========================================== -->
 
-    <header class="site-header">
+<!-- ================= PRODUCTS ================= -->
 
-        <div class="container nav-container">
+<section id="products">
 
-            <!-- Logo -->
-            <a href="#home" class="logo" aria-label="SASA Glow home">
+    <h2>Our Products</h2>
 
-                <span class="logo-symbol">
-                    SG
-                </span>
+    <p class="section-text">
+        Simple, useful and quality products for everyday care.
+    </p>
 
-                <span class="logo-text">
-                    SASA <em>Glow</em>
-                </span>
 
-            </a>
+    <div class="products">
 
 
-            <!-- Mobile menu button -->
-            <button
-                class="menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
-                aria-controls="main-navigation"
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+        <!-- PRODUCT 01 -->
 
+        <div class="product">
 
-            <!-- Main navigation -->
-            <nav
-                id="main-navigation"
-                class="main-navigation"
-                aria-label="Main navigation"
-            >
-
-                <a href="#home">Home</a>
-
-                <a href="#collection">
-                    Collection
-                </a>
-
-                <a href="#about">
-                    Our Story
-                </a>
-
-                <a href="#ritual">
-                    Glow Ritual
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-                <a href="#collection" class="nav-button">
-                    Shop Glow
-                </a>
-
-            </nav>
-
-        </div>
-
-    </header>
-
-
-    <!-- =========================================
-         MAIN WEBSITE
-    ========================================== -->
-
-    <main id="main-content">
-
-
-        <!-- =====================================
-             HERO SECTION
-        ====================================== -->
-
-        <section
-            id="home"
-            class="hero-section"
-            aria-labelledby="hero-title"
-        >
-
-            <div class="hero-background-circle"></div>
-
-            <div class="container hero-container">
-
-                <!-- Hero text -->
-                <div class="hero-content">
-
-                    <p class="eyebrow">
-                        THE NEW BEAUTY RITUAL
-                    </p>
-
-                    <h1 id="hero-title">
-                        Glow softly.
-                        <span>Shine boldly.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Thoughtful beauty essentials made for
-                        fresh skin, luminous moments, and the
-                        confidence to show up exactly as you are.
-                    </p>
-
-
-                    <!-- Hero buttons -->
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#collection"
-                            class="button button-dark"
-                        >
-                            Explore Collection
-                            <span>↗</span>
-                        </a>
-
-                        <a
-                            href="#about"
-                            class="text-button"
-                        >
-                            Discover SASA
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-
-                    <div class="hero-note">
-
-                        <span>
-                            ✦ ✦ ✦
-                        </span>
-
-                        <p>
-                            Beauty, reimagined for your everyday.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Hero visual -->
-                <div
-                    class="hero-visual"
-                    aria-label="SASA Glow beauty product display"
-                >
-
-                    <div class="hero-sun"></div>
-
-
-                    <!-- Main product -->
-                    <div class="hero-product hero-product-main">
-
-                        <div class="product-cap"></div>
-
-                        <div class="product-label">
-
-                            <small>
-                                SASA
-                            </small>
-
-                            <strong>
-                                GLOW
-                            </strong>
-
-                            <span>
-                                Radiance Serum
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Secondary product -->
-                    <div class="hero-product hero-product-small">
-
-                        <div class="product-cap"></div>
-
-                        <div class="product-label">
-
-                            <small>
-                                SASA
-                            </small>
-
-                            <strong>
-                                DEW
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="floating-product-card">
-
-                        <small>
-                            NEW
-                        </small>
-
-                        <strong>
-                            Glow Edit
-                        </strong>
-
-                    </div>
-
-                </div>
-
+            <div class="product-image">
+                PRODUCT 01
             </div>
 
-        </section>
-
-
-        <!-- =====================================
-             BRAND MARQUEE
-        ====================================== -->
-
-        <section
-            class="brand-marquee"
-            aria-label="SASA Glow values"
-        >
-
-            <div class="marquee-content">
-
-                <span>RADIANCE</span>
-                <b>✦</b>
-
-                <span>CARE</span>
-                <b>✦</b>
-
-                <span>CONFIDENCE</span>
-                <b>✦</b>
-
-                <span>RADIANCE</span>
-                <b>✦</b>
-
-                <span>CARE</span>
-                <b>✦</b>
-
-                <span>CONFIDENCE</span>
-                <b>✦</b>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================
-             COLLECTION
-        ====================================== -->
-
-        <section
-            id="collection"
-            class="section collection-section"
-            aria-labelledby="collection-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div>
-
-                        <p class="eyebrow">
-                            THE COLLECTION
-                        </p>
-
-                        <h2 id="collection-title">
-                            Your glow,
-                            <em>curated.</em>
-                        </h2>
-
-                    </div>
-
-
-                    <p>
-                        Simple formulas. Beautiful textures.
-                        A little ritual that makes ordinary
-                        mornings feel special.
-                    </p>
-
-                </div>
-
-
-                <!-- Product grid -->
-                <div class="product-grid">
-
-
-                    <!-- PRODUCT 01 -->
-
-                    <article class="product-card product-feature">
-
-                        <div class="product-image product-image-rose">
-
-                            <span class="product-badge">
-                                BESTSELLER
-                            </span>
-
-                            <div class="beauty-jar">
-
-                                <div class="jar-lid"></div>
-
-                                <div class="jar-body">
-
-                                    <small>
-                                        SASA
-                                    </small>
-
-                                    <strong>
-                                        GLOW
-                                    </strong>
-
-                                    <em>
-                                        Cloud Cream
-                                    </em>
-
-                                </div>
-
-                            </div>
-
-                            <span class="product-number">
-                                01
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-details">
-
-                            <div>
-
-                                <p class="product-category">
-                                    FACE · HYDRATION
-                                </p>
-
-                                <h3>
-                                    Cloud Glow Cream
-                                </h3>
-
-                            </div>
-
-                            <strong class="product-price">
-                                $34
-                            </strong>
-
-                        </div>
-
-
-                        <p class="product-description">
-                            A plush daily moisturizer for
-                            soft, dewy-looking skin.
-                        </p>
-
-
-                        <button
-                            type="button"
-                            class="add-to-cart"
-                            data-product="Cloud Glow Cream"
-                            data-price="34"
-                        >
-                            Add to ritual
-                            <span>+</span>
-                        </button>
-
-                    </article>
-
-
-
-                    <!-- PRODUCT 02 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image product-image-peach">
-
-                            <span class="product-badge">
-                                NEW
-                            </span>
-
-                            <div class="beauty-tube">
-
-                                <div class="tube-body">
-
-                                    <div class="tube-label">
-
-                                        <small>
-                                            SASA
-                                        </small>
-
-                                        <strong>
-                                            DEW
-                                        </strong>
-
-                                        <em>
-                                            Glow Drops
-                                        </em>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="tube-cap"></div>
-
-                            </div>
-
-                            <span class="product-number">
-                                02
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-details">
-
-                            <div>
-
-                                <p class="product-category">
-                                    FACE · GLOW
-                                </p>
-
-                                <h3>
-                                    Dew Glow Drops
-                                </h3>
-
-                            </div>
-
-                            <strong class="product-price">
-                                $28
-                            </strong>
-
-                        </div>
-
-
-                        <p class="product-description">
-                            A weightless finishing veil for
-                            an instant-looking glow.
-                        </p>
-
-
-                        <button
-                            type="button"
-                            class="add-to-cart"
-                            data-product="Dew Glow Drops"
-                            data-price="28"
-                        >
-                            Add to ritual
-                            <span>+</span>
-                        </button>
-
-                    </article>
-
-
-
-                    <!-- PRODUCT 03 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image product-image-lilac">
-
-                            <div class="beauty-compact">
-
-                                <div class="compact-top">
-
-                                    SASA
-
-                                    <strong>
-                                        GLOW
-                                    </strong>
-
-                                </div>
-
-                                <div class="compact-pan"></div>
-
-                            </div>
-
-                            <span class="product-number">
-                                03
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-details">
-
-                            <div>
-
-                                <p class="product-category">
-                                    CHEEKS · TINT
-                                </p>
-
-                                <h3>
-                                    Petal Veil Tint
-                                </h3>
-
-                            </div>
-
-                            <strong class="product-price">
-                                $22
-                            </strong>
-
-                        </div>
-
-
-                        <p class="product-description">
-                            A buildable wash of color that
-                            melts into the skin.
-                        </p>
-
-
-                        <button
-                            type="button"
-                            class="add-to-cart"
-                            data-product="Petal Veil Tint"
-                            data-price="22"
-                        >
-                            Add to ritual
-                            <span>+</span>
-                        </button>
-
-                    </article>
-
-
-
-                    <!-- PRODUCT 04 -->
-
-                    <article class="product-card">
-
-                        <div class="product-image product-image-gold">
-
-                            <div class="body-oil">
-
-                                <div class="oil-cap"></div>
-
-                                <div class="oil-label">
-
-                                    <small>
-                                        SASA
-                                    </small>
-
-                                    <strong>
-                                        SOFT
-                                    </strong>
-
-                                    <span>
-                                        Body Oil
-                                    </span>
-
-                                </div>
-
-                            </div>
-
-                            <span class="product-number">
-                                04
-                            </span>
-
-                        </div>
-
-
-                        <div class="product-details">
-
-                            <div>
-
-                                <p class="product-category">
-                                    BODY · NOURISH
-                                </p>
-
-                                <h3>
-                                    Silk Body Oil
-                                </h3>
-
-                            </div>
-
-                            <strong class="product-price">
-                                $31
-                            </strong>
-
-                        </div>
-
-
-                        <p class="product-description">
-                            A silky body oil for a soft,
-                            polished finish.
-                        </p>
-
-
-                        <button
-                            type="button"
-                            class="add-to-cart"
-                            data-product="Silk Body Oil"
-                            data-price="31"
-                        >
-                            Add to ritual
-                            <span>+</span>
-                        </button>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================
-             ABOUT / STORY
-        ====================================== -->
-
-        <section
-            id="about"
-            class="section story-section"
-            aria-labelledby="story-title"
-        >
-
-            <div class="container story-container">
-
-
-                <!-- Decorative brand image -->
-                <div class="story-visual">
-
-                    <div class="story-frame">
-
-                        <span class="vertical-brand">
-                            SASA GLOW
-                        </span>
-
-                        <div class="story-sun"></div>
-
-                        <div class="story-product">
-
-                            <span>
-                                SASA
-                            </span>
-
-                            <strong>
-                                GLOW
-                            </strong>
-
-                        </div>
-
-                        <span class="story-year">
-                            EST.<br>
-                            2026
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <!-- Story content -->
-                <div class="story-content">
-
-                    <p class="eyebrow">
-                        OUR PHILOSOPHY
-                    </p>
-
-                    <h2 id="story-title">
-                        Beauty should feel like
-                        <em>you.</em>
-                    </h2>
-
-                    <p>
-                        We created SASA Glow around one simple
-                        idea: your routine doesn't need to be
-                        complicated to feel luxurious.
-                    </p>
-
-                    <p>
-                        Each piece is designed to be intuitive,
-                        versatile, and joyful — so your shelf
-                        feels beautiful and your ritual feels
-                        effortless.
-                    </p>
-
-                    <div class="signature">
-                        SASA
-                        <span>✦</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================
-             GLOW RITUAL
-        ====================================== -->
-
-        <section
-            id="ritual"
-            class="section ritual-section"
-            aria-labelledby="ritual-title"
-        >
-
-            <div class="container">
-
-                <div class="section-heading centered">
-
-                    <p class="eyebrow">
-                        THE GLOW RITUAL
-                    </p>
-
-                    <h2 id="ritual-title">
-                        Three steps.
-                        <em>One mood.</em>
-                    </h2>
-
-                    <p>
-                        A tiny routine that leaves space
-                        for everything else.
-                    </p>
-
-                </div>
-
-
-                <div class="ritual-grid">
-
-
-                    <article class="ritual-card">
-
-                        <span>01</span>
-
-                        <div class="ritual-icon">
-                            ○
-                        </div>
-
-                        <h3>
-                            Prep
-                        </h3>
-
-                        <p>
-                            Start with clean, comfortable
-                            skin and a moment to breathe.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="ritual-card ritual-active">
-
-                        <span>02</span>
-
-                        <div class="ritual-icon">
-                            ✦
-                        </div>
-
-                        <h3>
-                            Glow
-                        </h3>
-
-                        <p>
-                            Layer your favorite textures
-                            where you want that fresh-lit
-                            finish.
-                        </p>
-
-                    </article>
-
-
-
-                    <article class="ritual-card">
-
-                        <span>03</span>
-
-                        <div class="ritual-icon">
-                            ◌
-                        </div>
-
-                        <h3>
-                            Go
-                        </h3>
-
-                        <p>
-                            Let the rest be yours. No rules,
-                            no rush, just your version of glow.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================
-             BRAND QUOTE
-        ====================================== -->
-
-        <section class="quote-section">
-
-            <div class="container quote-container">
-
-                <span class="quote-mark">
-                    “
-                </span>
-
-                <blockquote>
-                    There is no single way to glow.
-                    There is only your way.
-                </blockquote>
-
-                <p>
-                    — THE SASA GLOW EDIT
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =====================================
-             NEWSLETTER / CONTACT
-        ====================================== -->
-
-        <section
-            id="contact"
-            class="newsletter-section"
-            aria-labelledby="newsletter-title"
-        >
-
-            <div class="container newsletter-container">
-
-                <div>
-
-                    <p class="eyebrow">
-                        STAY IN THE GLOW
-                    </p>
-
-                    <h2 id="newsletter-title">
-                        Little notes for
-                        <em>brighter days.</em>
-                    </h2>
-
-                </div>
-
-
-                <form
-                    id="newsletter-form"
-                    class="newsletter-form"
-                    action="#"
-                    method="post"
-                    novalidate
-                >
-
-                    <label for="email">
-                        Your email address
-                    </label>
-
-                    <div class="email-row">
-
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autocomplete="email"
-                            maxlength="254"
-                            placeholder="you@example.com"
-                            required
-                        >
-
-                        <button
-                            type="submit"
-                            class="button button-dark"
-                        >
-                            Join
-                            <span>→</span>
-                        </button>
-
-                    </div>
-
-                    <p
-                        id="form-message"
-                        class="form-message"
-                        aria-live="polite"
-                    >
-                        No spam. Just product stories
-                        and occasional glow notes.
-                    </p>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-
-    <!-- =========================================
-         TOAST MESSAGE
-    ========================================== -->
-
-    <div
-        id="toast"
-        class="toast"
-        role="status"
-        aria-live="polite"
-    ></div>
-
-
-
-    <!-- =========================================
-         FOOTER
-    ========================================== -->
-
-    <footer class="site-footer">
-
-        <div class="container footer-top">
-
-
-            <a
-                href="#home"
-                class="logo footer-logo"
-                aria-label="SASA Glow home"
-            >
-
-                <span class="logo-symbol">
-                    SG
-                </span>
-
-                <span class="logo-text">
-                    SASA <em>Glow</em>
-                </span>
-
-            </a>
-
-
-            <nav
-                class="footer-navigation"
-                aria-label="Footer navigation"
-            >
-
-                <a href="#collection">
-                    Shop
-                </a>
-
-                <a href="#about">
-                    About
-                </a>
-
-                <a href="#ritual">
-                    Ritual
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-            </nav>
-
-
-            <div class="social-links">
-
-                <!-- Replace these # links with your official social URLs -->
-                <a href="#" aria-label="Instagram">
-                    IG
-                </a>
-
-                <a href="#" aria-label="Pinterest">
-                    PI
-                </a>
-
-                <a href="#" aria-label="TikTok">
-                    TK
-                </a>
-
-            </div>
+            <h3>Gentle Face Cleanser</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Gently removes dirt and excess oil
+                while leaving the skin feeling fresh
+                and clean.
+            </p>
 
         </div>
 
 
-        <div class="container footer-bottom">
+        <!-- PRODUCT 02 -->
 
-            <span>
-                © <span id="year"></span>
-                SASA Glow Collection.
-            </span>
+        <div class="product">
 
-            <span>
-                Made with intention.
-            </span>
+            <div class="product-image">
+                PRODUCT 02
+            </div>
+
+            <h3>Glow Moisturizer</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Helps keep skin soft, hydrated
+                and comfortable throughout the day.
+            </p>
 
         </div>
 
-    </footer>
+
+        <!-- PRODUCT 03 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 03
+            </div>
+
+            <h3>Daily Sunscreen</h3>
+
+            <p class="quality">
+                ⭐ High Quality
+            </p>
+
+            <p>
+                Everyday sun-care product designed
+                to help protect skin from UV exposure.
+            </p>
+
+        </div>
 
 
-    <!-- JavaScript will be added in Step 3 -->
+        <!-- PRODUCT 04 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 04
+            </div>
+
+            <h3>Hydrating Lip Balm</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Helps keep lips moisturized,
+                smooth and comfortable.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 05 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 05
+            </div>
+
+            <h3>Soft Body Lotion</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Provides everyday moisture and
+                leaves skin feeling soft and smooth.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 06 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 06
+            </div>
+
+            <h3>Silk Body Wash</h3>
+
+            <p class="quality">
+                ⭐ High Quality
+            </p>
+
+            <p>
+                Refreshing daily body cleanser
+                for a clean and comfortable feel.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 07 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 07
+            </div>
+
+            <h3>Everyday Shampoo</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Gentle hair cleansing for a fresh,
+                clean and comfortable feeling.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 08 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 08
+            </div>
+
+            <h3>Hair Conditioner</h3>
+
+            <p class="quality">
+                ⭐ Premium Quality
+            </p>
+
+            <p>
+                Helps hair feel softer, smoother
+                and easier to manage.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 09 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 09
+            </div>
+
+            <h3>Hand & Body Cream</h3>
+
+            <p class="quality">
+                ⭐ High Quality
+            </p>
+
+            <p>
+                Everyday moisturizing care for
+                hands and dry-feeling skin.
+            </p>
+
+        </div>
+
+
+        <!-- PRODUCT 10 -->
+
+        <div class="product">
+
+            <div class="product-image">
+                PRODUCT 10
+            </div>
+
+            <h3>Glow Care Set</h3>
+
+            <p class="quality">
+                ⭐ Premium Collection
+            </p>
+
+            <p>
+                A convenient combination of
+                everyday beauty and personal-care essentials.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <h2>About SASA Glow</h2>
+
+    <p>
+        SASA Glow Collection focuses on simple,
+        practical and quality beauty products
+        for everyday self-care.
+    </p>
+
+    <strong>
+        Quality products. Simple care. Your glow.
+    </strong>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <h2>Contact SASA Glow Collection</h2>
+
+    <p>
+        Have a question about our products?
+        Get in touch with us.
+    </p>
+
+    <button onclick="contactUs()">
+        Contact Us
+    </button>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>
+        SASA <span>Glow</span>
+    </h3>
+
+    <p>
+        Quality beauty for your everyday glow.
+    </p>
+
+    <p>
+        © 2026 SASA Glow Collection
+    </p>
+
+</footer>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
+```
+
+### Updated `style.css`
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #333;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #ddd;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo span,
+footer span {
+    color: #d46a8a;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #fde8ee;
+}
+
+.small-title {
+    color: #d46a8a;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin: 15px 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn,
+button {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* PRODUCTS */
+
+#products {
+    padding: 70px 6%;
+    text-align: center;
+}
+
+#products h2,
+.about h2,
+.contact h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    margin-bottom: 35px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.product {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #ddd;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+}
+
+.product-image {
+    height: 190px;
+    background: #f7d8df;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #999;
+    font-weight: bold;
+}
+
+.product h3 {
+    margin-top: 18px;
+}
+
+.product p {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.quality {
+    color: #d46a8a;
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    padding: 70px 20px;
+    background: #fde8ee;
+}
+
+.contact p {
+    margin: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* MOBILE */
+
+@media (max-width: 1100px) {
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+}
+```
+
+### `script.js`
+
+```javascript
+function contactUs() {
+
+    alert(
+        "Thank you for contacting SASA Glow!\n\n" +
+        "Please contact us for product information."
+    );
+
+}
+```
+
+**Now the website has no prices or dollar signs at all.** It focuses on the **10 products, quality, and product features**, which is cleaner for a beauty-brand website.
