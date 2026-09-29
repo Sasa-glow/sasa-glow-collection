@@ -428,3 +428,58 @@ footer p {
     }
 
 }
+/* Scroll Top Button */
+.top-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Dark Mode Button */
+.mode-button {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212 !important;
+    color: white !important;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background: #000 !important;
+}
+
+.dark-mode section,
+.dark-mode .product-card {
+    background: #1e1e1e !important;
+    color: white !important;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: white !important;
+}
