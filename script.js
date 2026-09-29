@@ -1,4 +1,23 @@
-// Welcome message
+
+// 🌙 DARK / LIGHT MODE
+const modeButton = document.createElement("button");
+
+modeButton.innerHTML = "🌙";
+modeButton.className = "mode-button";
+modeButton.setAttribute("aria-label", "Toggle dark mode");
+
+document.body.appendChild(modeButton);
+
+modeButton.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        modeButton.innerHTML = "☀️";
+    } else {
+        modeButton.innerHTML = "🌙";
+    }
+});
+// Welcome
 window.addEventListener("load", function () {
     console.log("Welcome to SASA Glow Collection ✨");
 });
@@ -20,30 +39,17 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// Contact button
-const contactButton = document.querySelector("button");
-
-if (contactButton) {
-    contactButton.addEventListener("click", function () {
-        alert("Thank you for contacting SASA Glow Collection! ✨");
-    });
-}
-
-
-// Scroll to top button
+// Scroll to top
 const topButton = document.createElement("button");
 
 topButton.innerHTML = "↑";
 topButton.className = "top-button";
+topButton.setAttribute("aria-label", "Scroll to top");
 
 document.body.appendChild(topButton);
 
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) {
-        topButton.style.display = "block";
-    } else {
-        topButton.style.display = "none";
-    }
+    topButton.style.display = window.scrollY > 300 ? "block" : "none";
 });
 
 topButton.addEventListener("click", function () {
@@ -53,23 +59,3 @@ topButton.addEventListener("click", function () {
     });
 });
 
-
-// 🌙 DARK / LIGHT MODE
-const modeButton = document.createElement("button");
-
-modeButton.innerHTML = "🌙";
-modeButton.className = "mode-button";
-
-document.body.appendChild(modeButton);
-
-modeButton.addEventListener("click", function () {
-
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        modeButton.innerHTML = "☀️";
-    } else {
-        modeButton.innerHTML = "🌙";
-    }
-
-});
