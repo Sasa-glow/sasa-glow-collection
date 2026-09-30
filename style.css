@@ -485,7 +485,7 @@ footer p {
 }
 .social-links {
     display: flex;
-    justify-contentt: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap:15px;
     margin-top: 20px;
