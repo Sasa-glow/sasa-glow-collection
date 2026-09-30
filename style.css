@@ -493,12 +493,12 @@ footer p {
 .social-links a {
     display: inline-block;
     padding: 10px 18px;
-    background-color:#2563eb;
+    background-color:#4deb25;
     color:white;
     text-decoration:none;
     border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 .social-links a:hover{
-    background-color:#1e40af;
+    background-color:#1eaf28;
 }
