@@ -33,17 +33,17 @@ header {
     border-bottom: 1px solid #f0dddd;
 }
 .logo .sasa{
-    color:black;
+    color:red;
 }
 .logo .glow {
-    color:red;
+    color:Pink;
 }
 .logo .collection {
     color:green;
 }
 
 .logo {
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
 }
 
