@@ -502,3 +502,77 @@ footer p {
 .social-links a:hover{
     background-color:#1eaf28;
 }
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-section {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.contact-section .section-description {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Contact Form */
+
+.contact-section form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+/* When user clicks an input */
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 6px rgba(214, 51, 132, 0.25);
+}
+
+/* Message box */
+
+.contact-section textarea {
+    resize: vertical;
+}
+
+/* Send button */
+
+.contact-section button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #d63384;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-section button:hover {
+    background: #b52b6f;
+    transform: translateY(-2px);
+}
